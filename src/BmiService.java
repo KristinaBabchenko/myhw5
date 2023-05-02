@@ -1,7 +1,7 @@
 public class BmiService {
-    public int calculate(int kilograms, int meters) {
+    public int calculate(int kilograms, double meters) {
         int index;
-        index = kilograms /(meters * meters);
+        index = (int) (kilograms /Math.pow (meters, 2));
 
         return index;
     }

@@ -4,8 +4,8 @@ public class Main {
             BmiService service = new BmiService();
 
         int kilograms = 107;
-        int meters = 2;
-        int index = service.calculate(kilograms,meters); // должно получиться 26
+        double meters = 1.84;
+        int index = service.calculate((int) kilograms,meters); // должно получиться 31
         System.out.println(index);
 
         }
